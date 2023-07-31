@@ -24,3 +24,7 @@ Route::get('email-test', function(){
   
     dd('done');
 });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
